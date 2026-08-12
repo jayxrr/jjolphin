@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'PetitFormalScript';
+  src: url('../fonts/PetitFormalScript-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.logo {
+  font-family: 'PetitFormalScript', cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.hamburger { display: none; background: none; border: none; font-size: 1.5rem; }
+.mobile-nav { display: none; flex-direction: column; padding: 12px 24px; }
+
+/* filmstrip frames */
+.filmstrip-nav { display: flex; }
+.frame {
+  width: 90px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.frame-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.85);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-size: 0.75rem;
+}
+.frame:hover .frame-label { opacity: 1; }
+
+/* mobile */
+@media (max-width: 767px) {
+  .filmstrip-nav, .tagline { display: none; }
+  .hamburger { display: block; }
+  .mobile-nav.open { display: flex; }
+}
