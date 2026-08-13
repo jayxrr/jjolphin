@@ -77,6 +77,26 @@ margin: 0 auto;
   font-weight: 600;
 }
 
+.moodboard {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 140px); /* fills the screen below your header */
+  margin: 0 auto;
+}
+
+.mb-item {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+.mb-photo1 { top: 10.2%; left: 12%; width: 25%; }
+.mb-rabbits { top: 65%; left: 2%; width: 20%; }
+.mb-book { top: 52%; left: 30%; width: 12%; }
+.mb-venus { top: 52%; left: 42%; width: 14%; }
+.mb-rug { top: 10%; right: 4%; width: 20%; }
+.mb-arabic { top: 45%; left: 33%; width: 35%; z-index: 2; }
+
 /* mobile */
 @media (max-width: 767px) {
   .filmstrip-nav, .tagline { display: none; }
