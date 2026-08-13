@@ -97,6 +97,55 @@ margin: 0 auto;
 .mb-rug { top: 10%; right: 4%; width: 20%; }
 .mb-arabic { top: 45%; left: 33%; width: 35%; z-index: 2; }
 
+.blog-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.post-entry {
+  margin-bottom: 48px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 24px;
+}
+
+.post-title {
+  font-family: 'PetitFormalScript', cursive;
+  font-size: 1.8rem;
+  color: #6b6b1f;
+  margin: 0;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin: 8px 0 12px 0;
+}
+
+.post-body {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.post-body.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more-btn {
+  display: none;
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #6b6b1f;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
 /* mobile */
 @media (max-width: 767px) {
   .filmstrip-nav, .tagline { display: none; }
