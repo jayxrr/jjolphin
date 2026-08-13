@@ -146,6 +146,67 @@ margin: 0 auto;
   padding: 0;
 }
 
+.about-page {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 24px;
+  align-items: flex-start;
+}
+
+.about-photos {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-heading {
+  font-family: 'PetitFormalScript', cursive;
+  font-size: 2rem;
+  color: #4b1a6b;
+  margin: 0 0 8px 0;
+}
+
+.about-block p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.sep {
+  color: #999;
+  margin: 0 4px;
+}
+
+
+
+/* mobile */
+@media (max-width: 767px) {
+  .about-page {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .about-photos {
+    width: 100%;
+  }
+}
+
 /* mobile */
 @media (max-width: 767px) {
   .filmstrip-nav, .tagline { display: none; }
