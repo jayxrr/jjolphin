@@ -193,6 +193,30 @@ margin: 0 auto;
   margin: 0 4px;
 }
 
+.gallery-list {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.gallery-item {
+  margin: 0 0 40px 0;
+  border: 1px solid #000;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+.gallery-item figcaption {
+  font-family: 'PetitFormalScript', cursive;
+  font-size: 1.3rem;
+  padding: 10px 16px;
+  color: #000;
+}
 
 
 /* mobile */
