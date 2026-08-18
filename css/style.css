@@ -218,6 +218,42 @@ margin: 0 auto;
   color: #000;
 }
 
+.media-list {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.media-item {
+  border: 1px solid #000;
+  margin-bottom: 40px;
+}
+
+.media-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-text {
+  border-top: 1px solid #000;
+  padding: 16px;
+}
+
+.media-text p {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.letterboxd-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #00a55e; /* letterboxd's brand green, optional touch */
+  text-decoration: underline;
+}
+
 
 /* mobile */
 @media (max-width: 767px) {
