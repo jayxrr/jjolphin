@@ -254,6 +254,54 @@ margin: 0 auto;
   text-decoration: underline;
 }
 
+.mb-swirl {
+  position: absolute;
+  z-index: 0; /* sits behind the photos */
+  pointer-events: none; /* decorative only, doesn't block clicks */
+}
+
+.mb-swirl-bottom {
+  bottom: -5%;
+  right: 0;
+  width: 45%;
+}
+
+.mb-swirl-top {
+  display: none; /* hidden on desktop, only used on mobile */
+}
+
+.mb-item {
+  z-index: 1; /* photos sit above the swirl */
+}
+
+@media (max-width: 767px) {
+  .filmstrip-nav { display: none; }
+  .hamburger { display: block; }
+  .mobile-nav.open { display: flex; }
+
+  /* tagline now shows on mobile, repositioned under header */
+  .tagline {
+    display: block;
+    width: 100%;
+    padding: 8px 16px 16px;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .mb-swirl-top {
+    display: block;
+    top: 5%;
+    left: 5%;
+    width: 25%;
+  }
+
+  .mb-swirl-bottom {
+    bottom: 2%;
+    right: 8%;
+    width: 30%;
+  }
+}
+
 
 /* mobile */
 @media (max-width: 767px) {
